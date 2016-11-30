@@ -1,0 +1,12 @@
+version: "2"
+
+services:
+  helloaap:
+    build: .
+    mem_limit: 500m
+    restart: always
+#    logging:
+#      driver: none
+    ports:
+      - "80:80/tcp"
+
